@@ -1,0 +1,16 @@
+name: 'Setup Gradle'
+description: 'Set up a specific version of the Gradle and add the
+   command-line tool to the PATH'
+author: 'jvalkeal'
+inputs:
+  gradle-version:
+    description: 'The Gradle version to make available on the path. Takes a whole
+       or semver Gradle version, or 6.x syntax (e.g. 6.0 => Gradle 6.x)'
+    required: false
+  gradle-file:
+    description: 'Path to where the compressed Gradle is located. The path could
+       be in your source repository or a local path on the agent.'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
