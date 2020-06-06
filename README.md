@@ -17,7 +17,7 @@ See [action.yml](action.yml)
 ```yaml
 steps:
 - uses: actions/checkout@v1
-- uses: jvalkeal/setup-gradle@master
+- uses: jvalkeal/setup-gradle@v1
   with:
     gradle-version: '5.6.2'
     gradle-file: <path to gradle-file> # Optional - to install gradle from.
